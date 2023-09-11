@@ -30,9 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -95,10 +95,23 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "clase2:build:production"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "973f22ca-e006-4080-a5d3-b816ab6b8d73"
   }
 }

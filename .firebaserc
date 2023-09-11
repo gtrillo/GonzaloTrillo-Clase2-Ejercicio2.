@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "ejercicio1-2b744"
+  },
+  "targets": {
+    "ejercicio1-2b744": {
+      "hosting": {
+        "clase2": [
+          "ejercicio1-2b744"
+        ]
+      }
+    },
+    "clase1-4fa76": {
+      "hosting": {
+        "clase2": [
+          "clase1-4fa76"
+        ]
+      }
+    }
+  }
+}

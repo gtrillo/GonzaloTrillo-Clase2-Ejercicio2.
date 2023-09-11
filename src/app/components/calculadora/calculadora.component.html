@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h4>Calculadora de Edades</h4>
+      <form>
+        <div class="mb-3">
+          <label for="edadUno" class="form-label">Ingresa la Edad de la Primera Persona</label>
+          <input [(ngModel)]="edadUno" type="number" class="form-control" id="edadUno" name="edadUno">
+        </div>
+        <div class="mb-3">
+          <label for="edadDos" class="form-label">Ingresa la Edad de la Segunda Persona</label>
+          <input [(ngModel)]="edadDos" type="number" class="form-control" id="edadDos" name="edadDos">
+        </div>
+        <div class="mb-3">
+          <button (click)="calcular()" class="btn btn-primary">Calcular</button>
+          <button (click)="limpiar()" class="btn btn-secondary">Limpiar</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h4>Resultados</h4>
+      <div class="mb-3">
+        <label for="suma" class="form-label">Suma:</label>
+        <input type="text" [value]="suma" class="form-control" id="suma" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="promedio" class="form-label">Promedio:</label>
+        <input type="text" [value]="promedio" class="form-control" id="promedio" readonly>
+      </div>
+    </div>
+  </div>
+</div>
